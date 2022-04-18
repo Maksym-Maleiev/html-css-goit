@@ -1,0 +1,11 @@
+body {
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.05em;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
