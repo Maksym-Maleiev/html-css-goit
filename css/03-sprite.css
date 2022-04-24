@@ -1,0 +1,37 @@
+.actions {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  outline: 1px solid #2a2a2a;
+  list-style: none;
+}
+
+.button {
+  padding: 0;
+  border: none;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  color: red;
+  border-radius: 50%;
+  background-color: teal;
+}
+
+.button:hover {
+  background-color: blue;
+  color: yellow;
+}
+
+.button-icon {
+  fill: currentColor;
+}
+
+.test-icon {
+  width: 100px;
+  height: 100px;
+  outline: 1px solid black;
+
+  background-image: url("../img/bg-sprite.svg#qwe");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
