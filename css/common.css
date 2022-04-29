@@ -1,13 +1,18 @@
 :root {
   --primary-text-color: #2a2a2a;
+  --primary-bg-color: #fff;
 }
 
 body {
+  padding: 10px;
+
   font-family: monospace;
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: -0.05em;
+
   color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
 }
 
 h1,
@@ -25,8 +30,19 @@ a {
   color: inherit;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .nav {
   margin-top: 20px;
   margin-bottom: 0;
   padding-left: 30px;
+}
+
+.link-home {
+  display: inline-block;
+  margin-bottom: 10px;
 }
