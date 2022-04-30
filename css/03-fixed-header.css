@@ -25,6 +25,10 @@ body {
   margin: 0;
 }
 
+p {
+  margin-bottom: 20px;
+}
+
 .page-header {
   position: fixed;
   top: 0;
