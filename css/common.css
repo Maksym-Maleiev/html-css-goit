@@ -45,4 +45,17 @@ img {
 .link-home {
   display: inline-block;
   margin-bottom: 10px;
+  padding: 10px;
+
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgb(14, 14, 201);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.link-home:hover {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
