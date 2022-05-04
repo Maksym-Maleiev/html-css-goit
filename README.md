@@ -1,6 +1,6 @@
 # html-css-goit
 
-- [Свойство позиционирования и анимируемые свойства](https://medium.com/@ArthurFinkler/css-animations-translate-vs-absolute-positioning-and-background-position-dd39tbdeade5)
+- [Свойство позиционирования и анимируемые свойства](https://medium.com/@ArthurFinkler/css-animations-translate-vs-absolute-positioning-and-background-position-dd39fbdeade5)
 - 2d vs 3d трансформации
 - Анимация А -> B -> A
 - Простая кнопка
@@ -8,5 +8,6 @@
 - Пункт меню с выезжающим подчёркиванием
 - Карточка с появляющимся оверлеем
 - Анимация модального окна
-- Перспектива: transform: perspective() vs свойство perspective -> https://3dtransforms.desandro.com/perpective
-- Флоп с перспективой. [Практика](https://3dtransforms.desandro.com/card-flip)
+- Перспектива: transform: perspective() vs свойство perspective ->
+  https://3dtransforms.desandro.com/perpective
+- Флоп с перспективой. [Практика](https://3dtransforms.desandro.com/perspective)
