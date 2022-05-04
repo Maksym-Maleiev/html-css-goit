@@ -9,5 +9,5 @@
 - Карточка с появляющимся оверлеем
 - Анимация модального окна
 - Перспектива: transform: perspective() vs свойство perspective ->
-  https://3dtransforms.desandro.com/perpective
+  https://3dtransforms.desandro.com/perspective
 - Флоп с перспективой. [Практика](https://3dtransforms.desandro.com/perspective)
