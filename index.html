@@ -10,6 +10,28 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/common.css" />
+
+    <style>
+      .scene {
+        perspective: 600px;
+        height: 300px;
+        width: 300px;
+
+        outline: 2px solid black;
+      }
+
+      .box {
+        height: 100%;
+        background-color: teal;
+
+        transform: scale(0);
+        transition: transform 500ms ease-in-out;
+      }
+
+      .scene:hover .box {
+        transform: scale(1) rotateX(1turn);
+      }
+    </style>
   </head>
   <body>
     <h1>Анимация и перспектива</h1>
@@ -32,5 +54,9 @@
         <a href="./06-perspective.html">Флип с перспективой</a>
       </li>
     </ul>
+
+    <div class="scene">
+      <div class="box"></div>
+    </div>
   </body>
 </html>
