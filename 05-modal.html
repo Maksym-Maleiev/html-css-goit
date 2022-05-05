@@ -16,17 +16,63 @@
     <a href="./index.html">Назад на главную!</a>
     <br />
     <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugiat iusto incidunt
-      unde, quae dolorem optio odit esse. Repellendus ab eveniet impedit reiciendis similique
-      suscipit enim recusandae nisi itaque quo, provident at ipsa sint, totam dolorem qui debitis.
-      At debitis sed asperiores reprehenderit laboriosam repudiandae natus, minus modi velit, enim
-      delectus nostrum ad placeat perferendis? Alias eveniet voluptate aliquid laudantium nobis
-      aspernatur ullam minus dolorum. Exercitationem deserunt veniam at omnis voluptates fugiat rem
-      voluptatem voluptatibus, ullam quam accusantium minima? Eos sed soluta ipsa totam deserunt
-      eveniet debitis esse quibusdam, molestiae dolores, deleniti necessitatibus consequuntur atque
-      placeat sit? Fugiat, nam beatae.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias illum ducimus nihil
+      excepturi necessitatibus minima aperiam, reiciendis laborum atque quod unde? Quisquam
+      veritatis vero, praesentium, saepe dolor corrupti nesciunt, labore sint quam quaerat qui
+      corporis! Iusto quia magnam ab? Omnis, repellat in hic dolor accusantium nisi dignissimos!
+      Nostrum laborum animi neque veritatis assumenda alias veniam inventore facere sunt. Eaque
+      incidunt aliquam a autem laboriosam magnam animi! Saepe, iste! Magni facere dicta quam
+      cupiditate hic, perferendis facilis, ea voluptas quod sequi odio consequatur placeat, impedit
+      maxime vel unde dolor dolorem dignissimos quisquam! Accusantium rerum ratione velit cum
+      itaque, soluta incidunt aliquid?
     </p>
 
-    <div class="backdrop is-hidden"></div>
+    <button data-open-modal>Открыть модалку</button>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iste, repellat voluptate
+      asperiores, doloremque illum earum, consectetur ea praesentium vel distinctio quisquam! Aut
+      dolorum quidem ab culpa sit cumque sint. Voluptatibus, mollitia voluptatum cupiditate nesciunt
+      cumque facere. Quaerat nihil nisi debitis numquam sint enim adipisci autem impedit quidem.
+      Assumenda veritatis autem corrupti dolores repudiandae illo iusto, incidunt aliquid magni
+      cumque? Ducimus adipisci totam officia sint quis et amet provident, corrupti blanditiis illo
+      laboriosam quaerat neque sit vitae deserunt, accusamus quibusdam nostrum cupiditate. Saepe id
+      consequatur, nam distinctio quae porro ab fugit recusandae atque similique neque repellat
+      laborum delectus ipsam amet!
+    </p>
+
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, dolor soluta.
+          Doloremque unde nam quae officia minus dolorem quia optio? Tenetur optio consectetur esse
+          quaerat laudantium voluptatum dolores consequatur ad tempora illum fuga quia et animi sunt
+          aperiam ut debitis excepturi eum, sed cupiditate? Ab culpa quos at, vel corrupti, totam
+          odio deleniti suscipit doloribus vero ducimus maiores quia dolor.
+        </p>
+        <button data-close-modal>Закрыть</button>
+      </div>
+    </div>
+
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector('[data-open-modal]'),
+        closeModalBtn: document.querySelector('[data-close-modal]'),
+        backdrop: document.querySelector('[data-backdrop]'),
+      };
+
+      refs.openModalBtn.addEventListener('click', toggleModal);
+      refs.closeModalBtn.addEventListener('click', toggleModal);
+
+      refs.backdrop.addEventListener('click', logBackdropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle('is-hidden');
+      }
+
+      function logBackdropClick() {
+        console.log('Это клик в бекдроп');
+      }
+    </script>
   </body>
 </html>
