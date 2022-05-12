@@ -1,0 +1,65 @@
+/* Как прятать чек: display vs appearance vs visually-hidden */
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  /* outline: 1px solid black; */
+}
+
+.checkbox {
+  /* через appearance */
+
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute; */
+
+  /* через visually-hidden */
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+
+  border: 2px solid #2a2a2a;
+  border-radius: 4px;
+}
+
+.checkbox:checked + .icon {
+  transform: scale(1.2);
+  border-color: #2196f3;
+  background-color: #2196f3;
+  background-image: url('../img/full-check.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+
+.label {
+  transition: color 250ms linear, transform 250ms linear;
+}
+
+.checkbox:checked ~ .label {
+  color: #2196f3;
+  transform: translateX(20px);
+}
