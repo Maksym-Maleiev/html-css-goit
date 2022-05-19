@@ -166,7 +166,7 @@ body {
 }
 
 .notification__icon {
-  display: none;
+  /* display: none; */
   font-size: 30px;
 }
 
@@ -178,6 +178,6 @@ body {
   margin-right: 40px;
 }
 
-.notification:hover .notification__icon {
+/* .notification:hover .notification__icon {
   display: block;
-}
+} */
