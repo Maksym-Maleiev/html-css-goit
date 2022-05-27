@@ -17,7 +17,7 @@
   - Стили контейнера
   - Стили секции features. [Формула расчёта ширины элемента](https://gist.github.com/luxplanjay/b2cdf8f124fc2c896789a28b6ba16a87)
   - Скрытый вторичный контент (секция reviews)
-- [Как посмотреть страницу на телефоне если дома wifi](https://github.com/ritwickdey/vscode-live-server/blog/master/docs/faqs.md#how-to-access-the-server-from-mobile)
+- [Как посмотреть страницу на телефоне если дома wifi](https://github.com/ritwickdey/vscode-live-server/blob/master/docs/faqs.md#how-to-access-the-server-from-mobile)
   - [Как открыть терминал на Windows](https://youtu.be/S3eN_xdz3gg)
 
 ## Часть 2 - Меню
