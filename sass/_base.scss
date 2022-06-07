@@ -6,3 +6,9 @@ body {
   background-color: #fff;
   line-height: 1.3;
 }
+
+// Для того чтобы не проскроливалась страничка когда открыта модалка (но это делается через JS).
+
+body.modal-open {
+  overflow: hidden;
+}

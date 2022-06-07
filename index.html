@@ -24,13 +24,18 @@
         </button>
 
         <div class="menu-container" id="menu-container" data-menu>
-          Контент меню
+          <div class="navigation"></div>
+          <div class="contacts"></div>
         </div>
       </nav>
     </div>
   </div>
 
   <main>
+    <div class="container">
+      <button type="button" data-modal-open>Открыть</button>
+    </div>
+
     <section class="section features">
       <div class="container">
         <h2 class="section-title">Заголовок первой секции</h2>
@@ -59,7 +64,33 @@
     </section>
   </main>
 
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" data-modal-close>Закрыть</button>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quasi nemo quod illum assumenda unde esse eos est
+        illo facilis? Dicta maiores eius, dolorem dignissimos rerum id beatae incidunt! Vitae.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repudiandae inventore quod natus nobis in.
+        Adipisci quas voluptatem id expedita quos error impedit sit beatae voluptates eligendi excepturi labore
+        accusamus non dignissimos vero sed tempora alias consectetur, in maiores. Voluptatum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, vero. Est laborum minima totam suscipit,
+        voluptate ut inventore libero culpa atque optio sint explicabo excepturi eligendi officia eum laboriosam saepe
+        necessitatibus debitis natus accusantium pariatur dolore iusto. Consequatur, ullam atque! Iste tempora vitae
+        magnam blanditiis fugiat nesciunt ipsam quasi soluta?
+      </p>
+    </div>
+  </div>
+
+  <!-- <div class="mobile-menu" data-menu>
+    <div class="content"></div>
+  </div> -->
+
   <script src="./js/menu.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
