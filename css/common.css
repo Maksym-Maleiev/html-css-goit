@@ -17,4 +17,38 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.hero {
+  background-image: url("mobile.jpg");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("mobile2x.jpg");
+  }
+}
+
+@media screen and (min-width: 489px) {
+  .hero {
+    background-image: url("tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 489px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 489px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("tablet2x.jpg");
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: url("desktop.jpg");
+  }
+}
+
+@media screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("desktop2x.jpg");
+  }
+}
 /*# sourceMappingURL=common.css.map */
